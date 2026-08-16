@@ -100,7 +100,7 @@ export default function ArtisanJourneyModal({ isOpen, onClose }: ArtisanJourneyM
   return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 select-none">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center p-4 sm:p-6 select-none">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -147,7 +147,7 @@ export default function ArtisanJourneyModal({ isOpen, onClose }: ArtisanJourneyM
                   transition={{ duration: 0.2 }}
                   className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center"
                 >
-                  <div className="relative w-full h-[220px] sm:h-[260px] md:h-[300px] rounded-xl overflow-hidden border border-white/10 bg-black/50">
+                  <div className="relative w-full h-55 sm:h-65 md:h-75 rounded-xl overflow-hidden border border-white/10 bg-black/50">
                     <img
                       src={currentStage.image}
                       alt={currentStage.title}

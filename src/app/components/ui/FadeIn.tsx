@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ReactNode } from "node_modules/@types/react"; // or standard react import
+import { ReactNode } from "react";
 
 interface FadeInProps {
   children: ReactNode;

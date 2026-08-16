@@ -53,7 +53,7 @@ export default function Showroom() {
               </div>
               <h2 className="text-4xl md:text-6xl font-serif text-accent-cream leading-tight">
                 The Digital <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-gold via-accent-copper to-accent-bronze">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-gold via-accent-copper to-accent-bronze">
                   Showroom Showcase.
                 </span>
               </h2>
@@ -89,7 +89,7 @@ export default function Showroom() {
                       </div>
                     </div>
 
-                    <div className="p-8 space-y-6 flex flex-col justify-between flex-grow">
+                    <div className="p-8 space-y-6 flex flex-col justify-between grow">
                       <div className="space-y-3">
                         <span className="text-[10px] font-mono uppercase tracking-widest text-accent-gold">
                           {product.category}

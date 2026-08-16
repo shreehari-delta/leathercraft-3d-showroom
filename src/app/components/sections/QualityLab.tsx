@@ -52,7 +52,7 @@ export default function QualityLab() {
               </div>
               <h2 className="text-4xl md:text-6xl font-serif text-accent-cream leading-tight">
                 Rigorous Quality <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-gold via-accent-copper to-accent-bronze">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-gold via-accent-copper to-accent-bronze">
                   Testing Standards.
                 </span>
               </h2>
@@ -97,7 +97,7 @@ export default function QualityLab() {
 
           {/* Right Column: Live Test Output Display */}
           <ScrollReveal className="lg:col-span-2 h-full">
-            <div className="bg-charcoal/80 p-8 md:p-12 rounded-3xl border border-white/10 relative flex flex-col justify-between shadow-2xl backdrop-blur-md overflow-hidden space-y-8 h-full min-h-[350px]">
+            <div className="bg-charcoal/80 p-8 md:p-12 rounded-3xl border border-white/10 relative flex flex-col justify-between shadow-2xl backdrop-blur-md overflow-hidden space-y-8 h-full min-h-87.5">
               <div className="absolute top-0 right-0 w-96 h-96 bg-accent-gold/5 rounded-full blur-3xl pointer-events-none" />
 
               <div className="space-y-6 relative z-10">

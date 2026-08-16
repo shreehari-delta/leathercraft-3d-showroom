@@ -17,7 +17,7 @@ export default function Craftsmanship() {
 
         <h2 className="text-4xl md:text-6xl font-serif text-accent-cream leading-tight">
           Uncompromised Italian <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-gold via-accent-copper to-accent-bronze">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-gold via-accent-copper to-accent-bronze">
             Artisanal Mastery.
           </span>
         </h2>

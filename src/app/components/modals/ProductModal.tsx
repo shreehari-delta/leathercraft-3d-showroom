@@ -57,12 +57,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
     setTimeout(() => {
       if (product) {
         addToCart({
-          productId: product.id,
+          productId: (product as any).id || product.id,
+          id: product.id,
           name: product.name,
           price: product.price,
           size: selectedSize,
           image: product.image,
-        });
+        } as any);
       }
       setIsAcquiring(false);
       setIsSuccess(true);
@@ -88,7 +89,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           // Added overscroll-none so it never triggers background scrolling
-          className="fixed inset-0 z-[9999] bg-background/80 backdrop-blur-md overflow-y-auto overscroll-none"
+          className="fixed inset-0 z-9999 bg-background/80 backdrop-blur-md overflow-y-auto overscroll-none"
           onClick={handleClose}
         >
           {/* Removed items-center and justify-center to fix the flexbox scrolling bug */}
@@ -110,7 +111,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </button>
 
               {/* Reduced minimum height so it fits on laptop screens without scrolling */}
-              <div className="w-full md:w-1/2 h-[280px] md:h-auto md:min-h-[500px] relative bg-background">
+              <div className="w-full md:w-1/2 h-70 md:h-auto md:min-h-125 relative bg-background">
                 <img
                   src={product.image}
                   alt={product.name}
